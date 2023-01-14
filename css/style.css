@@ -35,7 +35,7 @@ html {
 .mouse-circle {
 width: 4rem;
 height: 4rem;
-border:0.2rem solid #430c25;
+border:0.2rem solid #19c7e2;
 animation: mouseCircleAnim 10s infinite linear;
 
 }
@@ -101,7 +101,7 @@ animation: mouseCircleAnim 10s infinite linear;
     width: 100%;
     height: 100vh;
     display: flex;
-    justify-content: center;
+    justify-content:center;
     align-items: center;
     
 }
@@ -109,10 +109,10 @@ animation: mouseCircleAnim 10s infinite linear;
 .logo {
     position: absolute;
     top: 2rem;
-    left: 5 rem;
+    left: 5rem;
     font-size: 2rem;
     text-transform: uppercase;
-    color: #430c25;
+    color: rgb(3, 1, 54);
 }
 /* End of Logo */
 
@@ -125,4 +125,103 @@ animation: mouseCircleAnim 10s infinite linear;
     border-radius: 50%;
 
 }
+.main-circle img {
+    mix-blend-mode: color-dodge;
+  
+}
+/*Featured Text*/
+.featured-text {
+    position: fixed;
+    bottom: 50%;
+
+    top: 40rem;
+    left: 5rem;
+    /* font-size: 2rem; */
+    text-transform:uppercase;
+    color: #13cced;
+    font-size: 5rem;
+    /* color: #5cbcf8; */
+    /* width: 5; */
+}
+/*End of Featured Text*/
+
+/*Main button*/
+.main-btn{
+    position: absolute;
+    bottom:6rem;
+    width: 7rem;
+    height: 7rem;
+    background-color: rgb(8, 6, 49);
+    border-radius: 50%;
+    border: 0.2rem dotted #13cced;
+    padding: 0.1rem;
+
+}
+.main-btn-content {
+    width: 100%;
+    height: 100%;
+    border: 0.2rem dotted #2092d0;
+    border-radius: 50%;
+    transform: rotate(40deg);
+}
+.main-btn-line {
+    position:absolute;
+    top:1.5rem;
+    width: 1.5rem;
+    height: 0.3rem;
+    border: 0.1rem solid rgb(51, 195, 247);
+
+ }
+
+ .main-btn-line:nth-child(1) {
+ transform: rotateZ(-45deg) translateX(-0.35rem);
+ transform-origin: left center;   
+ border-right: none;
+
+ }
+
+ .main-btn-line:nth-child(2) {
+    transform: rotateZ(45deg) translateX(0.35rem);
+    transform-origin: right center;
+    border-left: none;   
+    }
+  .main-btn-line:nth-child(3) {
+        transform: rotateZ(90deg) translateX(0.3rem);
+        border-left: none;  
+  }
+
+  .main-btn span {
+    position:absolute;
+    bottom: 2rem;
+    color: rgb(30, 169, 204);
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+/* .main-btn-line {
+    position:absolute;
+    top: 4rem;
+    width: 3rem;
+    height: 0.5rem;
+    border: 0.1rem solid rgb(67, 191, 222);
+}
+
+.main-btn-line:nth-child(1){
+     transform: rotateZ(-45deg) translateX(-0.65rem);
+     transform-origin: left center;
+     border-right: none; 
+} 
+
+.main-btn-line:nth-child(2){
+    transform: rotateZ(45deg) translateX(0.65rem);
+    transform-origin: right center;
+    border-left: none;
+}; 
+
+.main-btn-line:nth-child(3){
+    transform: rotateZ(90deg) translateX(0.5rem);
+    border-left: none;
+}; */
+/*Main button*/
 /* End of Animated Circles */
+/*Section 1*/
