@@ -11,10 +11,10 @@
     outline: none; 
     font-family: 'Playfair Display', serif;
 
-};
-
-html {
+}
+/* html {
     font-size: 62.5%;
+
 }
 .container {
     margin-left: 0;
@@ -22,209 +22,113 @@ html {
 
 .center {
     display: flex;
-    justify-content: center;
+    justify-content: center; 
    
-}
+ }  */
 /* End of Common Styles */
 /* Mouse Circle*/
-.mouse-circle,
-.mouse-dot{
-    border-radius: 50%;
-    position: fixed;
-    z-index: 300;
-    transform:translate(-50%, -50%);
-    opacity: 0;
-}
-.mouse-circle {
-width: 4rem;
-height: 4rem;
-border:0.2rem solid #19c7e2;
-animation: mouseCircleAnim 10s infinite linear;
-
-}
-
-@keyframes mouseCircleAnim {
-    0% {
-        width: 4rem;
-        height: 4rem;
-    }
-    25% {
-        width: 6rem;
-        height: 6rem;
-    }
-    35% {
-        width: 3rem;
-        height: 3rem;
-    }
-    70% {
-        width: 6rem;
-        height: 6rem;
-    }
-    100% {
-        width: 4rem;
-        height: 4rem;
-    }
-}
-.mouse-dot {
-    width: 0.5rem;
-    height: 0.5rem;
-    background-color: rgb(2, 2, 29);
-    animation: mouseDotAnim 10s infinite linear;
-}
-@keyframes mouseDotAnim {
-    0% {
-        width: 0.5rem;
-        height: 0.5rem;
-    }
-    55% {
-        width: 1.5rem;
-        height: 1.5rem;
-    }
-    
-    
-    100% {
-        width: 0.5rem;
-        height: 0.5rem;
-    }
-}
+ /* body {
+  overflow: hidden;
+  height: 100vh;
+  --xy: -150px -150px;
+  background: radial-gradient(circle at var(--xy), #0000, #000f 30vh),
+              url(https://picsum.photos/id/34/1000/1000);
+} */
 /* End of Mouse Circle*/
 /*Page BG*/
 
+body {
+    background:  url(images/list.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+   }
 
-.page-bg {
+  .center {
+     mix-blend-mode: color-dodge;
+
+  }
+  .fluid {
+    border-radius: 50%;
+ }
+
+.card {
+  width: 100%;
+  height: 100%
+  
+}
+ 
+.card-img-top {
+  width: 100%;
+  height: 100%
+}
+
+.btn-primary {
+  background-color: rgb(135, 135, 217);
+  border: 0.2rem dotted #95116e;
+  border-radius: 50%;
+
+}
+.nav-link {
+  cursor: pointer;
+}
+/* .page-bg {
     position: fixed;
     width: 100%;
     height: 100vh; 
     background: url(images/list.jpg) center no-repeat;
     background-size: 100%;
     
-} 
-/*End of Page BG
-/*Section 1*/
-.section-1 {
-    position: absolute;
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    justify-content:center;
-    align-items: center;
-    
-}
-/* Logo */
-.logo {
-    position: absolute;
-    top: 2rem;
-    left: 5rem;
-    font-size: 2rem;
-    text-transform: uppercase;
-    color: rgb(3, 1, 54);
-}
-/* End of Logo */
-
-/* Animated Circles */
-
-.main-circle {
-    /* width: 55rem;
-    height: 55rem; */
-    position: absolute;
-    overflow: hidden;
-    border-radius: 50%;
-
-}
-.main-circle img {
-    mix-blend-mode: color-dodge;
-  
-}
+}  */
+/*  */
 /*Featured Text*/
-.featured-text {
-    position: fixed;
-    bottom: 50%;
+.text-primary {
+  
+     text-transform:uppercase;
+   /* color: #13cced; */
+    font-size: 5rem; 
+    /* color: #5cbcf8;  */
 
-    top: 40rem;
-    left: 5rem;
-    /* font-size: 2rem; */
-    text-transform:uppercase;
-    color: #13cced;
-    font-size: 5rem;
-    /* color: #5cbcf8; */
-    /* width: 5; */
-}
-/*End of Featured Text*/
-
-/*Main button*/
-.main-btn{
-    position:absolute;
-    bottom:6rem;
-    width: 7rem;
-    height: 7rem;
-    background-color: rgb(56, 56, 61);
-    border-radius: 50%;
-    border: 0.2rem dotted #13cced;
-    padding: 0.1rem;
-    overflow: hidden;
 }
 
-.main-btn-content {
+.bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+  }
+
+  @media (min-width: 768px) {
+    .bd-placeholder-img-lg {
+      font-size: 3.5rem;
+    }
+  }
+  .form-signin {
     width: 100%;
-    height: 100%;
-    border: 0.2rem dotted #2092d0;
-    border-radius: 50%;
-    transform: rotate(40deg);
-}
-.main-btn-line {
-    position:absolute;
-    top:1.5rem;
-    width: 1.5rem;
-    height: 0.3rem;
-    border: 0.1rem solid rgb(51, 195, 247);
-
- }
-
- .main-btn-line:nth-child(1) {
- transform: rotateZ(-45deg) translateX(-0.35rem);
- transform-origin: left center;   
- border-right: none;
-
- }
-
- .main-btn-line:nth-child(2) {
-    transform: rotateZ(45deg) translateX(0.35rem);
-    transform-origin: right center;
-    border-left: none;   
-    }
-  .main-btn-line:nth-child(3) {
-        transform: rotateZ(90deg) translateX(0.3rem);
-        border-left: none;  
+    max-width: 330px;
+    padding: 15px;
+    margin: auto;
   }
-
-  .main-btn span {
-    position:absolute;
-    bottom: 2rem;
-    color: rgb(30, 169, 204);
-    font-size: 1.1rem;
-    font-weight: 600;
-    text-transform: uppercase;
+  
+  .form-signin .checkbox {
+    font-weight: 400;
   }
-  .ripple {
-    position:absolute;
-    width: 0%;
-    height: 0%;
-    background-color: #58337a;
-    border-radius: 50%;
-    transform: translate(-50%, -50%);
-    animation: rippleAnim 0.2s forwards;
+  
+  .form-signin .form-floating:focus-within {
+    z-index: 2;
   }
-  @keyframes rippleAnim {
-    0% {
-        width: 0;
-        height: 0;
-    }
-    100% {
-        width: 210%;
-        height: 210%;
-    }
+  
+  .form-signin input[type="email"] {
+    margin-bottom: -1px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
   }
-
-/*End of Main button*/
-/* End of Animated Circles */
-/*Section 1*/
+  
+  .form-signin input[type="password"] {
+    margin-bottom: 10px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
+ 

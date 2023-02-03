@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Playball&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Common Styles */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playball&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Common Styles */
+*{
+   /* margin:0;
+   padding: 0;
+   box-sizing: border-box;
+   text-decoration: none;
+   list-style-type: none;
+   outline: none;  */
+   font-family: 'Playfair Display', serif;
+
+}
+
+
+
+body {
+ 
+   background:  url(images/list.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+ }
+
+ .bd-placeholder-img {
+   font-size: 1.12rem;
+   text-anchor: middle;
+   
+   -webkit-user-select: none;
+   -moz-user-select: none;
+   user-select: none;
+   margin-top: 50px;
+ }
+
+ @media (min-width: 768px) {
+   .bd-placeholder-img-lg {
+     font-size: 3.5rem;
+   }
+ }
+
+ .carousel-inner{
+   height: 400px !important;
+   overflow: hidden;
+ }
+ .carousel-inner {
+   overflow: visible;
+ }
+ .carousel-inner img {
+   left: 50%;
+   max-width: none !important;
+   min-height: 400px;
+   min-width: 100%;
+   position: absolute;
+   top: 200px;
+   transform: translate(-50%,-50%);
+ }
